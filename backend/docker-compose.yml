@@ -8,7 +8,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: pswrd
-      MONGO_INITDB_DATABASE: course_ecommerce_db
+      MONGO_INITDB_DATABASE: SimpleApi-with-db
     volumes:
       - mongo_data:/data/db
 
