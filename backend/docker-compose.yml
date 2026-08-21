@@ -1,0 +1,16 @@
+services:
+  mongo_db:
+    image: mongo:6.0
+    container_name: api_mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: pswrd
+      MONGO_INITDB_DATABASE: course_ecommerce_db
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
